@@ -1,0 +1,31 @@
+{
+  "name": "express-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node app.js",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "colors": "^1.4.0",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.5",
+    "express": "~4.16.1",
+    "express-partials": "^0.3.0",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.6.3",
+    "ioredis": "^4.17.3",
+    "jade": "~1.11.0",
+    "lodash": "^4.17.20",
+    "log4js": "^6.3.0",
+    "mongoose": "^5.10.9",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7",
+    "swig": "^1.4.2"
+  }
+}

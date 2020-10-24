@@ -1,0 +1,269 @@
+[2020-10-24T10:25:48.497] [INFO] syslog - 日志初始化成功
+[2020-10-24T10:25:48.498] [ERROR] syslog - 日志初始化成功11
+[2020-10-24T10:29:08.421] [INFO] syslog - 日志初始化成功
+[2020-10-24T10:29:08.422] [ERROR] syslog - 日志初始化成功1error
+[2020-10-24T10:29:08.422] [DEBUG] syslog - 日志初始化成功1debug
+[2020-10-24T10:29:08.422] [WARN] syslog - 日志初始化成功1warn
+[2020-10-24T10:34:39.761] [INFO] syslog - 日志初始化成功
+[2020-10-24T10:34:39.762] [ERROR] syslog - 日志初始化成功1error
+[2020-10-24T10:34:39.762] [DEBUG] syslog - 日志初始化成功1debug
+[2020-10-24T10:34:39.762] [WARN] syslog - 日志初始化成功1warn
+[2020-10-24T10:35:22.518] [INFO] syslog - 日志初始化成功
+[2020-10-24T10:35:22.519] [ERROR] syslog - 日志初始化成功1error
+[2020-10-24T10:35:22.519] [DEBUG] syslog - 日志初始化成功1debug
+[2020-10-24T10:35:22.520] [WARN] syslog - 日志初始化成功1warn
+[2020-10-24T10:42:39.715] [INFO] syslog - 日志初始化成功
+[2020-10-24T10:42:39.717] [ERROR] syslog - 日志初始化成功1error
+[2020-10-24T10:42:39.717] [DEBUG] syslog - 日志初始化成功1debug
+[2020-10-24T10:42:39.717] [WARN] syslog - 日志初始化成功1warn
+[2020-10-24T10:42:39.818] [INFO] syslog - <log> 11
+[2020-10-24T10:42:39.818] [INFO] syslog - 
+[2020-10-24T10:42:39.819] [INFO] syslog - <log> 11
+[2020-10-24T10:42:39.819] [INFO] syslog - 
+[2020-10-24T10:48:41.981] [WARN] syslog - 日志初始化成功
+[2020-10-24T10:48:42.092] [WARN] syslog - <warn> Load {"port":3306,"db":"fruits"} success
+[2020-10-24T10:48:42.093] [WARN] syslog - 
+[2020-10-24T10:48:42.094] [WARN] syslog - <warn> Load {"port":3306,"db":"xueliu_mahjong"} success
+[2020-10-24T10:48:42.094] [WARN] syslog - 
+[2020-10-24T10:48:42.094] [WARN] syslog - <warn> Load all db success
+[2020-10-24T10:48:42.095] [WARN] syslog - 
+[2020-10-24T10:50:37.454] [WARN] syslog - 日志初始化成功
+[2020-10-24T10:50:37.547] [WARN] syslog - <warn> Load {"port":3306,"db":"fruits"} success
+[2020-10-24T10:50:37.548] [WARN] syslog - 
+[2020-10-24T10:50:37.548] [WARN] syslog - <warn> Load {"port":3306,"db":"xueliu_mahjong"} success
+[2020-10-24T10:50:37.548] [WARN] syslog - 
+[2020-10-24T10:50:37.549] [WARN] syslog - <warn> Load all db success
+[2020-10-24T10:50:37.549] [WARN] syslog - 
+[2020-10-24T10:51:12.461] [WARN] syslog - 日志初始化成功
+[2020-10-24T10:51:12.556] [WARN] syslog - <warn> Load {"port":3306,"db":"fruits"} success
+[2020-10-24T10:51:12.556] [WARN] syslog - 
+[2020-10-24T10:51:12.557] [WARN] syslog - <warn> Load {"port":3306,"db":"xueliu_mahjong"} success
+[2020-10-24T10:51:12.557] [WARN] syslog - 
+[2020-10-24T10:51:12.558] [WARN] syslog - <warn> Load all db success
+[2020-10-24T10:51:12.558] [WARN] syslog - 
+[2020-10-24T10:51:12.626] [INFO] syslog - <info> mysql查询sql:SELECT u.id uid, u.nick_name nickName, u.name, u.avatar, u.visitor, u.type uType, um.money, u.channel_id, u.pre_uid FROM `user` u LEFT JOIN user_money um ON u.id=um.user_id WHERE u.id=1006 LIMIT 1
+[2020-10-24T10:51:12.627] [INFO] syslog - 
+[2020-10-24T10:54:31.457] [WARN] syslog - 日志初始化成功
+[2020-10-24T10:54:31.559] [WARN] syslog - <warn> Load fruits success
+[2020-10-24T10:54:31.559] [WARN] syslog - 
+[2020-10-24T10:54:31.559] [WARN] syslog - <warn> Load xueliu_mahjong success
+[2020-10-24T10:54:31.560] [WARN] syslog - 
+[2020-10-24T10:54:31.560] [WARN] syslog - <warn> Load all db success
+[2020-10-24T10:54:31.560] [WARN] syslog - 
+[2020-10-24T10:54:31.592] [WARN] syslog - <warn> Load Redis success
+[2020-10-24T10:54:31.593] [WARN] syslog - 
+[2020-10-24T10:54:31.607] [WARN] syslog - <warn> 连接mongodb数据库成功:mongodb://localhost:27017/express?poolSize=5
+[2020-10-24T10:54:31.608] [WARN] syslog - 
+[2020-10-24T10:56:35.178] [WARN] syslog - 日志初始化成功
+[2020-10-24T10:56:35.289] [WARN] syslog - <warn> Load fruits success
+[2020-10-24T10:56:35.290] [WARN] syslog - 
+[2020-10-24T10:56:35.290] [WARN] syslog - <warn> Load xueliu_mahjong success
+[2020-10-24T10:56:35.291] [WARN] syslog - 
+[2020-10-24T10:56:35.291] [WARN] syslog - <warn> Load all db success
+[2020-10-24T10:56:35.291] [WARN] syslog - 
+[2020-10-24T10:56:35.303] [WARN] syslog - <warn> server is listening on port[32m3000[39min[32mdevelopment[39mmode.
+[2020-10-24T10:56:35.304] [WARN] syslog - 
+[2020-10-24T10:56:35.324] [WARN] syslog - <warn> Load Redis success
+[2020-10-24T10:56:35.324] [WARN] syslog - 
+[2020-10-24T10:56:35.335] [WARN] syslog - <warn> 连接mongodb数据库成功:mongodb://localhost:27017/express?poolSize=5
+[2020-10-24T10:56:35.336] [WARN] syslog - 
+[2020-10-24T10:58:02.187] [WARN] syslog - 日志初始化成功
+[2020-10-24T10:58:02.288] [WARN] syslog - <warn> Load fruits success
+[2020-10-24T10:58:02.288] [WARN] syslog - 
+[2020-10-24T10:58:02.289] [WARN] syslog - <warn> Load xueliu_mahjong success
+[2020-10-24T10:58:02.290] [WARN] syslog - 
+[2020-10-24T10:58:02.290] [WARN] syslog - <warn> Load all db success
+[2020-10-24T10:58:02.291] [WARN] syslog - 
+[2020-10-24T10:58:02.306] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T10:58:02.307] [WARN] syslog - 
+[2020-10-24T10:58:02.329] [WARN] syslog - <warn> Load Redis success
+[2020-10-24T10:58:02.330] [WARN] syslog - 
+[2020-10-24T10:58:02.344] [WARN] syslog - <warn> 连接mongodb数据库成功:mongodb://localhost:27017/express?poolSize=5
+[2020-10-24T10:58:02.345] [WARN] syslog - 
+[2020-10-24T11:01:52.331] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:01:52.440] [WARN] syslog - <warn> Load  mysql [32mfruits[39m  success
+[2020-10-24T11:01:52.441] [WARN] syslog - 
+[2020-10-24T11:01:52.441] [WARN] syslog - <warn> Load  mysql [32mxueliu_mahjong[39m  success
+[2020-10-24T11:01:52.441] [WARN] syslog - 
+[2020-10-24T11:01:52.442] [WARN] syslog - <warn> Load all mysql db success
+[2020-10-24T11:01:52.442] [WARN] syslog - 
+[2020-10-24T11:01:52.452] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:01:52.452] [WARN] syslog - 
+[2020-10-24T11:01:52.470] [WARN] syslog - <warn> Load Redis [32m127.0.0.1:6379[39m success
+[2020-10-24T11:01:52.470] [WARN] syslog - 
+[2020-10-24T11:01:52.486] [WARN] syslog - <warn> 连接mongodb数据库成功:mongodb://localhost:27017/express?poolSize=5
+[2020-10-24T11:01:52.486] [WARN] syslog - 
+[2020-10-24T11:02:34.992] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:02:35.090] [WARN] syslog - <warn> Load  mysql [32mfruits[39m  success
+[2020-10-24T11:02:35.091] [WARN] syslog - 
+[2020-10-24T11:02:35.092] [WARN] syslog - <warn> Load  mysql [32mxueliu_mahjong[39m  success
+[2020-10-24T11:02:35.092] [WARN] syslog - 
+[2020-10-24T11:02:35.092] [WARN] syslog - <warn> Load all mysql db success
+[2020-10-24T11:02:35.093] [WARN] syslog - 
+[2020-10-24T11:02:35.118] [WARN] syslog - <warn> Load Redis [32m127.0.0.1:6379[39m success
+[2020-10-24T11:02:35.119] [WARN] syslog - 
+[2020-10-24T11:02:35.138] [WARN] syslog - <warn> 连接mongodb数据库成功:mongodb://localhost:27017/express?poolSize=5
+[2020-10-24T11:02:35.138] [WARN] syslog - 
+[2020-10-24T11:02:36.101] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:02:36.102] [WARN] syslog - 
+[2020-10-24T11:03:17.896] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:03:17.993] [WARN] syslog - <warn> Load  mysql [32mfruits[39m  success
+[2020-10-24T11:03:17.993] [WARN] syslog - 
+[2020-10-24T11:03:17.994] [WARN] syslog - <warn> Load  mysql [32mxueliu_mahjong[39m  success
+[2020-10-24T11:03:17.994] [WARN] syslog - 
+[2020-10-24T11:03:17.994] [WARN] syslog - <warn> Load all mysql db success
+[2020-10-24T11:03:17.995] [WARN] syslog - 
+[2020-10-24T11:03:18.022] [WARN] syslog - <warn> Load Redis [32m127.0.0.1:6379[39m success
+[2020-10-24T11:03:18.022] [WARN] syslog - 
+[2020-10-24T11:03:18.037] [WARN] syslog - <warn> 连接mongodb数据库成功:[32mmongodb://localhost:27017/express?poolSize=5[39m
+[2020-10-24T11:03:18.037] [WARN] syslog - 
+[2020-10-24T11:03:18.503] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:03:18.504] [WARN] syslog - 
+[2020-10-24T11:08:30.175] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:08:30.268] [WARN] syslog - <warn> Load  mysql [32mfruits[39m  success
+[2020-10-24T11:08:30.269] [WARN] syslog - 
+[2020-10-24T11:08:30.269] [WARN] syslog - <warn> Load  mysql [32mxueliu_mahjong[39m  success
+[2020-10-24T11:08:30.270] [WARN] syslog - 
+[2020-10-24T11:08:30.270] [WARN] syslog - <warn> Load all mysql db success
+[2020-10-24T11:08:30.271] [WARN] syslog - 
+[2020-10-24T11:08:30.290] [WARN] syslog - <warn> Load Redis [32m127.0.0.1:6379[39m success
+[2020-10-24T11:08:30.290] [WARN] syslog - 
+[2020-10-24T11:08:30.306] [WARN] syslog - <warn> 连接mongodb数据库成功:[32mmongodb://localhost:27017/express?poolSize=5[39m
+[2020-10-24T11:08:30.306] [WARN] syslog - 
+[2020-10-24T11:08:30.778] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:08:30.778] [WARN] syslog - 
+[2020-10-24T11:20:36.814] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:20:36.868] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: Cannot read property 'host' of undefined
+    at Redis.<anonymous> (D:\wnmp\www\node-express\express-app\module\db\redis.js:14:57)
+    at Redis.emit (events.js:327:22)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-10-24T11:20:37.323] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:20:37.323] [WARN] syslog - 
+[2020-10-24T11:21:20.168] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:21:20.215] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: Cannot read property 'host' of undefined
+    at Redis.<anonymous> (D:\wnmp\www\node-express\express-app\module\db\redis.js:14:57)
+    at Redis.emit (events.js:327:22)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-10-24T11:21:20.679] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:21:20.679] [WARN] syslog - 
+[2020-10-24T11:21:59.027] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:21:59.067] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: Cannot read property 'host' of undefined
+    at Redis.<anonymous> (D:\wnmp\www\node-express\express-app\module\db\redis.js:14:57)
+    at Redis.emit (events.js:327:22)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-10-24T11:21:59.535] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:21:59.536] [WARN] syslog - 
+[2020-10-24T11:22:29.618] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:22:29.651] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: Cannot read property 'host' of undefined
+    at Redis.<anonymous> (D:\wnmp\www\node-express\express-app\module\db\redis.js:14:57)
+    at Redis.emit (events.js:327:22)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-10-24T11:22:30.125] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:22:30.125] [WARN] syslog - 
+[2020-10-24T11:29:57.953] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:29:57.997] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: Cannot read property 'host' of undefined
+    at Redis.<anonymous> (D:\wnmp\www\node-express\express-app\module\db\redis.js:14:57)
+    at Redis.emit (events.js:327:22)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-10-24T11:29:58.465] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:29:58.466] [WARN] syslog - 
+[2020-10-24T11:30:45.272] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:30:45.309] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: Cannot read property 'host' of undefined
+    at Redis.<anonymous> (D:\wnmp\www\node-express\express-app\module\db\redis.js:14:57)
+    at Redis.emit (events.js:327:22)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-10-24T11:30:45.781] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:30:45.782] [WARN] syslog - 
+[2020-10-24T11:31:20.004] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:31:20.056] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: Cannot read property 'host' of undefined
+    at Redis.<anonymous> (D:\wnmp\www\node-express\express-app\module\db\redis.js:14:57)
+    at Redis.emit (events.js:327:22)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-10-24T11:31:20.513] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:31:20.513] [WARN] syslog - 
+[2020-10-24T11:31:42.818] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:31:42.854] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: Cannot read property 'host' of undefined
+    at Redis.<anonymous> (D:\wnmp\www\node-express\express-app\module\db\redis.js:14:57)
+    at Redis.emit (events.js:327:22)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-10-24T11:31:43.326] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:31:43.327] [WARN] syslog - 
+[2020-10-24T11:32:03.483] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:32:03.522] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: Cannot read property 'host' of undefined
+    at Redis.<anonymous> (D:\wnmp\www\node-express\express-app\module\db\redis.js:14:57)
+    at Redis.emit (events.js:327:22)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-10-24T11:32:03.991] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:32:03.991] [WARN] syslog - 
+[2020-10-24T11:32:26.206] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:32:26.245] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: Cannot read property 'host' of undefined
+    at Redis.<anonymous> (D:\wnmp\www\node-express\express-app\module\db\redis.js:14:57)
+    at Redis.emit (events.js:327:22)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+[2020-10-24T11:32:26.713] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:32:26.713] [WARN] syslog - 
+[2020-10-24T11:34:45.105] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:34:45.748] [WARN] syslog - <warn> http server is listening on port [32m3000[39m in [32mdevelopment[39m mode.
+[2020-10-24T11:34:45.749] [WARN] syslog - 
+[2020-10-24T11:35:57.986] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:36:50.588] [WARN] syslog - 日志初始化成功
+[2020-10-24T11:50:16.817] [ERROR] syslog - <error> ReferenceError: path is not defined
+    at common.getFileInfo (D:\wnmp\www\node-express\express-app\lib\common.js:49:27)
+    at common.getMethod (D:\wnmp\www\node-express\express-app\lib\common.js:60:25)
+    at D:\wnmp\www\node-express\express-app\routes\index.js:9:25
+    at Layer.handle [as handle_request] (D:\wnmp\www\node-express\express-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\wnmp\www\node-express\express-app\node_modules\express\lib\router\index.js:317:13)
+    at D:\wnmp\www\node-express\express-app\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\wnmp\www\node-express\express-app\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\wnmp\www\node-express\express-app\node_modules\express\lib\router\index.js:275:10)
+    at D:\wnmp\www\node-express\express-app\module\http\http.js:16:9
+    at Layer.handle [as handle_request] (D:\wnmp\www\node-express\express-app\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\wnmp\www\node-express\express-app\node_modules\express\lib\router\index.js:317:13)
+    at D:\wnmp\www\node-express\express-app\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\wnmp\www\node-express\express-app\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\wnmp\www\node-express\express-app\node_modules\express\lib\router\index.js:275:10)
+    at D:\wnmp\www\node-express\express-app\node_modules\express-session\index.js:502:7
+    at D:\wnmp\www\node-express\express-app\node_modules\connect-mongo\src\index.js:10:25
+[2020-10-24T11:51:15.921] [INFO] syslog - <info> msg:/site/register
+[2020-10-24T11:51:15.923] [INFO] syslog - 
+[2020-10-24T11:56:57.426] [INFO] syslog - <info> </site/register> msg:请求参数:{"body":{},"query":{}}
+[2020-10-24T11:56:57.428] [INFO] syslog - 
+[2020-10-24T11:57:08.409] [INFO] syslog - <info> </site/register?a=1> msg:请求参数:{"body":{},"query":{"a":"1"}}
+[2020-10-24T11:57:08.409] [INFO] syslog - 
+[2020-10-24T11:57:08.425] [INFO] syslog - <info> </site> msg:请求参数:{"body":{},"query":{}}
+[2020-10-24T11:57:08.426] [INFO] syslog - 
+[2020-10-24T13:42:51.556] [INFO] syslog - <info> </site> msg:请求参数:{"body":{},"query":{}}
+[2020-10-24T13:42:51.557] [INFO] syslog - 
+[2020-10-24T13:43:09.582] [INFO] syslog - <info> </site> msg:请求参数:{"body":{},"query":{}}
+[2020-10-24T13:43:09.583] [INFO] syslog - 
+[2020-10-24T13:44:31.728] [INFO] syslog - <info> </site> msg:请求参数:{"body":{},"query":{}}
+[2020-10-24T13:44:48.059] [INFO] syslog - <info> </site/login> msg:请求参数:{"body":{"user_name":"00001","pass":"12345611"},"query":{}}
+[2020-10-24T13:46:13.879] [INFO] syslog - <info> </site/login> msg:请求参数:{"body":{"user_name":"00001","pass":"12345611"},"query":{}}
+[2020-10-24T13:46:13.905] [INFO] syslog - <info> <postLogin> userInfo:null
+[2020-10-24T13:50:08.036] [INFO] syslog - <info> </site/login> msg:请求参数:{"body":{"user_name":"00001","pass":"12345611"},"query":{}}
+[2020-10-24T13:50:08.064] [INFO] syslog - <info> <postLogin> userInfo:null
+[2020-10-24T13:51:06.402] [INFO] syslog - <info> </site/login> msg:请求参数:{"body":{"user_name":"00001","pass":"12345611"},"query":{}}
+[2020-10-24T13:51:06.421] [INFO] syslog - <info> <postLogin> userInfo:null
+[2020-10-24T13:53:00.192] [INFO] syslog - <info> </site/login> msg:请求参数:{"body":{"user_name":"00001","pass":"12345611"},"query":{}}
+[2020-10-24T13:53:10.190] [WARN] syslog - <warn> hhtp Request has timed out.
+[2020-10-24T14:12:55.730] [INFO] syslog - <info> </site/login> msg:请求参数:{"body":{"user_name":"00001","pass":"12345611"},"query":{}}
+[2020-10-24T14:13:05.730] [WARN] syslog - <warn> hhtp Request has timed out.
+[2020-10-24T14:13:11.587] [INFO] syslog - <info> </site/login> msg:请求参数:{"body":{"user_name":"00001","pass":"12345611"},"query":{}}
+[2020-10-24T14:13:11.610] [INFO] syslog - <info> <postLogin> userInfo:null
+[2020-10-24T14:20:17.853] [INFO] syslog - <info> </site/login> msg:请求参数:{"body":{"user_name":"00001","pass":"12345611"},"query":{}}
+[2020-10-24T14:20:17.869] [INFO] syslog - <info> <user.postLogin> userInfo:null
+[2020-10-24T14:21:56.616] [INFO] syslog - <info> <index.> msg:请求参数:{"body":{"user_name":"00001","pass":"12345611"},"query":{}}
+[2020-10-24T14:21:56.630] [INFO] syslog - <info> <user.postLogin> userInfo:null
+[2020-10-24T14:35:36.139] [ERROR] syslog - <error> Caught exception: UncaughtExceptionError: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1313:16)
+    at listenInCluster (net.js:1361:12)
+    at Server.listen (net.js:1447:7)
+    at Timeout._onTimeout (D:\wnmp\www\exprssNode\module\http\http.js:53:45)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+[2020-10-24T14:36:08.843] [INFO] syslog - <info> <index./site> msg:请求参数:{"body":{},"query":{}}
+[2020-10-24T14:36:12.965] [INFO] syslog - <info> <index./site/login> msg:请求参数:{"body":{"user_name":"00001","pass":"123456"},"query":{}}
+[2020-10-24T14:36:12.995] [INFO] syslog - <info> <user.postLogin> userInfo:{"_id":"5f92906a5deb8954d05bece9","user_name":"00001","pass":"123456","__v":0}
+[2020-10-24T14:36:13.046] [INFO] syslog - <info> <index./home> msg:请求参数:{"body":{},"query":{}}
+[2020-10-24T14:36:51.820] [INFO] syslog - <info> <index./site/logout> msg:请求参数:{"body":{},"query":{}}
+[2020-10-24T14:36:51.839] [INFO] syslog - <info> <index./site> msg:请求参数:{"body":{},"query":{}}

@@ -1,0 +1,275 @@
+<div class="layui-card">
+    <div class="layui-card-header">ipfs计算工具<%=title%></div>
+    <div class="layui-card-body">
+        <form class="layui-form" >
+            <div class="layui-form-item">
+                <label class="layui-form-label">fps币数量</label>
+                <div class="layui-input-block">
+                    <input type="text" name="fps"   placeholder="目前fps数量" class="layui-input" id="fps_num">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">pps币数量</label>
+                <div class="layui-input-block">
+                    <input type="text" name="pps"  placeholder="目前pps数量"  class="layui-input" id="pps_num">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">矿机级别</label>
+                <div class="layui-input-block">
+                    <select name="level" >
+                        <option value="500" selected>500矿机</option>
+                        <option value="1000">1000矿机</option>
+                        <option value="1500">1500矿机</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">挂载数量</label>
+                <div class="layui-input-block">
+                    <select name="gnum" >
+                        <option value="0" >0</option>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">截止日期</label>
+                <div class="layui-input-block">
+                    <input type="text" name="stopdate"  placeholder="计算截止日期"  class="layui-input" id="stopdate">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button type="submit" class="layui-btn" lay-submit="" lay-filter="sumMath">GO</button>
+                    <button type="button" class="layui-btn" id="logout">退出</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<hr class="layui-bg-green" style="display: none">
+
+<table class="layui-table" style="display: none">
+    <thead>
+    <tr>
+        <th>天数</th>
+        <th>日期</th>
+        <th>pps</th>
+        <th>pps价格</th>
+        <th>资产</th>
+    </tr>
+    </thead>
+    <tbody id="renderPps">
+    </tbody>
+</table>
+
+
+<script src="/js/jquery.js"></script>
+<script src="/js/layui/layui.js"></script>
+<script>
+    
+    $("#logout").click(function () {
+        window.location.href = '/site/logout';
+    });
+    
+    $('#fps_num').val(0);
+    $('#pps_num').val(0);
+    let nowDayI = getDate();
+    let addDateI =  getDateAdd(nowDayI,30);
+    $('#stopdate').val(addDateI);
+    layui.use('form', function(){
+        var form = layui.form;
+        // 监听提交
+        form.on('submit(sumMath)', function(data){
+            workMath(data.field);
+            return false;
+        });
+    });
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#stopdate' //指定元素
+        });
+    });
+
+    //计算矿机数据
+    function workMath(data) {
+        $("#renderPps").html('');
+        $(".layui-bg-green").show();
+        layer.msg('全力计算中.....', {
+            shade: 0.01
+            ,time:500
+        });
+
+
+        //初始化价格 - 计算以这个为基准
+        let initDate = '2020-10-19';
+        let initDate_fps = 301.733;
+        let initDate_pps = 84.088;
+
+        //计算当天的价格
+        let fps_price = initDate_fps;
+        let pps_price = initDate_pps;
+
+        //获取当天日期
+        let nowDay = getDate();
+        for(let i=0;i<=1000;i++){
+            let addDate =  getDateAdd(initDate,i);
+            if(nowDay == addDate){
+                break;
+            }
+            fps_price = fps_price *(1+0.03);
+            fps_price = fps_price.toFixed(4);
+
+            pps_price = pps_price *(1+0.03);
+            pps_price = pps_price.toFixed(4);
+        }
+        console.log('当天价格-fps_price',fps_price);
+        console.log('当天价格-pps_price',pps_price);
+
+
+
+        let fps = parseFloat(data.fps);//当前的fps数量
+        let pps = parseFloat(data.pps);//当前的pps数量
+        let stopdate = data.stopdate;//计算到的截止日期
+        let meNumLevel = parseInt(data.level);//自己的矿机数量级别
+        let gmeNum = parseInt(data.gnum);//挂在到自己下面的矿机数量 - 按照和自己级别一样的计算
+
+        let stopDate = new Date(stopdate);
+        var stopTime = stopDate.getTime();
+
+        var day = new Date();
+        let datTime = day.getTime();
+
+        if(stopTime<datTime || !stopDate){
+            layer.msg('日期不合法',{time:1000});
+            return;
+        }
+
+        let totalObj = [];
+        totalObj.push(
+            {
+                date:nowDay,
+                fps:fps,
+                pps:pps,
+                pps_price:pps_price,
+                price: (fps * fps_price + pps * pps_price).toFixed(4)
+            }
+        );
+
+        for(let i=1;i<=1000;i++){
+            let addDate =  getDateAdd(day,i);
+            if(compareDate(addDate,stopdate)){
+                break;
+            }
+
+            //fps 当天价格
+            fps_price = fps_price *(1+0.03);
+            fps_price = fps_price.toFixed(4);
+
+            //pps当天价格
+            pps_price = pps_price *(1+0.03);
+            pps_price = pps_price.toFixed(4);
+
+            //当天挖出的数量
+            let num = meNumLevel * 7 * 0.005 / pps_price;
+
+            if(gmeNum == 1){
+                num = num*2;
+            }else if(gmeNum>=2){
+                num = num * 2.5;
+            }
+            num = parseFloat(num);
+            pps = pps + num;
+            totalObj.push(
+                {
+                    date:addDate,
+                    fps:fps,
+                    pps_price:pps_price,
+                    pps:pps.toFixed(3),
+                    price: (fps * fps_price + pps * pps_price).toFixed(4)
+                }
+            );
+        }
+        //渲染list数据
+        renderList(totalObj);
+    }
+
+    //渲染数据
+    function renderList(totalObj) {
+        let listHtml = '';
+        for(let index in totalObj){
+            let info  = totalObj[index];
+            let id = +parseInt(index)+1;
+            listHtml+='<tr>\
+            <td>'+id+'</td>\
+            <td>'+info.date+'</td>\
+            <td>'+info.pps+'</td>\
+            <td>'+info.pps_price+'</td>\
+            <td>'+info.price+'</td>\
+            </tr>';
+        }
+
+        setTimeout(function () {
+            //渲染html
+            $("#renderPps").html(listHtml);
+            $('.layui-table').show();
+        },500)
+
+    }
+
+    /**
+     * 获取当天日期
+     * @returns {boolean}
+     */
+    function getDate() {
+        var date = new Date();
+        date.setTime(date.getTime());
+        var noeDate = date.getFullYear()+"-" + (date.getMonth()+1) + "-" + date.getDate();
+        return noeDate;
+    }
+
+    /**
+     * 日期加减
+     * @param date1
+     * @param date2
+     * @returns {boolean}
+     */
+    function getDateAdd(date,num) {
+        let dateP = new Date(date);
+        var date2 = new Date();
+        date2.setDate(dateP.getDate() + num);
+        var noeDate = date2.getFullYear()+"-" + (date2.getMonth()+1) + "-" + date2.getDate();
+        return noeDate;
+    }
+
+    /**
+     * 获取日期比较
+     * @param date1
+     * @param date2
+     * @returns {boolean}
+     */
+    function compareDate(date1,date2) {
+        let dateOne = new Date(date1);
+        var dateOneTime = dateOne.getTime();
+
+        var dateTwo = new Date(date2);
+        let datTwoTime = dateTwo.getTime();
+
+        if(dateOneTime>datTwoTime){
+            return true;
+        }
+        return false;
+    }
+
+
+
+
+</script>

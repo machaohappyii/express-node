@@ -1,0 +1,66 @@
+<div class="layui-card">
+    <div class="layui-card-header">注册界面</div>
+    <div class="layui-card-body">
+        <form class="layui-form" >
+            <div class="layui-form-item">
+                <label class="layui-form-label">用户名:</label>
+                <div class="layui-input-block">
+                    <input type="text" name="user_name"   placeholder="注册姓名" class="layui-input" id="name">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码:</label>
+                <div class="layui-input-block">
+                    <input type="password" name="pass"  placeholder="密码"  class="layui-input" id="pass">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">确认密码:</label>
+                <div class="layui-input-block">
+                    <input type="password" name="sub_pass"  placeholder="确认密码"  class="layui-input" id="subpass">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button type="submit" class="layui-btn" lay-submit="" lay-filter="sumMath">注册</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+
+<script src="/js/jquery.js"></script>
+<script src="/js/layui/layui.js"></script>
+<script>
+    //Demo
+    layui.use('form', function(){
+        var form = layui.form;
+        //监听提交
+        form.on('submit(sumMath)', function(data){
+            layer.msg(JSON.stringify(data.field));
+            submit(data.field);
+            return false;
+        });
+    });
+
+    function submit(data) {
+        $.ajax({
+            url:"/site/register",
+            type:"POST",
+            data:data,
+            success:function (data) {
+                let code = data.code;
+                if(code !=200){
+                    let msg = data.msg;
+                    layer.msg(msg,{time:2000});
+                }else{
+                    window.location.href = '/site';
+                }
+            }
+        })
+    }
+
+</script>
